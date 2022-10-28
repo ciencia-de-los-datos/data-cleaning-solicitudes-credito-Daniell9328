@@ -11,7 +11,6 @@ import re
 
 def clean_data():
 
-    
     def format_date(str_date):
         d = re.search(r'(^\d+)\/(\d+)\/(\d+)', str_date, re.IGNORECASE)
         day = d.group(1)
@@ -46,6 +45,5 @@ def clean_data():
 
     df.drop_duplicates(inplace=True)
     df.dropna(inplace=True)
-    df.tipo_de_emprendimiento.unique()
-    
+ 
     return df
