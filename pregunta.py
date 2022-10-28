@@ -8,6 +8,7 @@ correctamente. Tenga en cuenta datos faltantes y duplicados.
 """
 import pandas as pd
 
+
 def clean_data():
 
     
@@ -46,4 +47,5 @@ def clean_data():
     df.drop_duplicates(inplace=True)
     df.dropna(inplace=True)
     df.tipo_de_emprendimiento.unique()
+    
     return df
