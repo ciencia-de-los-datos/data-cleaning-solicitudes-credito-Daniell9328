@@ -24,7 +24,7 @@ def clean_data():
             date = day + '/' + month + '/' + year
             return date
 
-    df = pd.read_csv("solicitudes_credito.csv", sep=";")
+    df = pd.read_csv('solicitudes_credito.csv', sep=";")
     df = df[df.columns[1:]]
     df.drop_duplicates(inplace=True)
     df.dropna(inplace=True)
